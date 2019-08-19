@@ -1,6 +1,6 @@
 use std::io;
 
-mod Rust50 {
+mod input {
 
     /**
     * Prompts user for a line of text from standard input and returns the
