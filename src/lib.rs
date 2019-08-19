@@ -9,6 +9,7 @@ mod Rust50 {
     */
     pub fn get_char() -> char 
     {
+        // TODO error handling
         let mut buffer = String::new();
         std::io::stdin().read_line(&mut buffer).expect("Failed to Input");
         buffer.trim().parse::<char>().unwrap()
@@ -21,6 +22,7 @@ mod Rust50 {
     * prompted to retry. If line can't be read, returns .
     */
     pub fn get_double() -> f64 {
+        // TODO error handling
         let mut buffer = String::new();
         std::io::stdin().read_line(&mut buffer).expect("Failed to Input");
         buffer.trim().parse::<f64>().unwrap()
@@ -33,6 +35,7 @@ mod Rust50 {
     * to retry. If line can't be read, returns .
     */
     pub fn get_float() -> f32 {
+        // TODO error handling
         let mut buffer = String::new();
         std::io::stdin().read_line(&mut buffer).expect("Failed to Input");
         buffer.trim().parse::<f32>().unwrap()
@@ -57,6 +60,7 @@ mod Rust50 {
     * prompted to retry. If line can't be read, returns.
     */
     pub fn get_long() -> i64 {
+        // TODO error handling
         let mut buffer = String::new();
         std::io::stdin().read_line(&mut buffer).expect("Failed to Input");
         buffer.trim().parse::<i64>().unwrap()
@@ -71,6 +75,7 @@ mod Rust50 {
     * on heap.
     */
     pub fn get_string()-> String {
+        // TODO error handling
         let mut buffer = String::new();
         io::stdin().read_line(&mut buffer).expect("Failed to Input");
         buffer
@@ -86,6 +91,7 @@ mod Rust50 {
     */
 
     pub fn input(message:String) -> String {
+        // TODO error handling
         print!("{} ", message);
         let mut buffer = String::new();
         io::stdin().read_line(&mut buffer).expect("Failed to Input");
